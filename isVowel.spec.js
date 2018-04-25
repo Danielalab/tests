@@ -1,13 +1,7 @@
 // Archivo `isVowel.spec.js`:
- 
-const assert = require('assert');
-const isVowel = require('./isVowel');
 
-const assertEqual = (value, expected) => {
-  if (value !== expected) {
-    throw new Error(`Expected '${value}' to equal '${expected}'`);
-  }
-};
+const { assert } = require('chai');
+const isVowel = require('./isVowel');
 
 describe('isVowel()', () => {
 
